@@ -45,8 +45,10 @@ button {
 }
 
 .container {
-    max-width: calc(100% - 270px);
-    margin: 0 auto;
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn {
@@ -76,6 +78,7 @@ button {
 }
 
 .section-sub-title {
+    margin-bottom: 22px;
     color: var(--color-blue);
     font-weight: 600;
 }
@@ -108,39 +111,51 @@ button {
     );
 }
 
-.header-inner {
+.navbar,
+.navbar-left {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-.header-navbar__list {
+.navbar-left {
+    gap: 155px;
+    margin-right: auto;
+}
+
+.navbar__list {
     display: flex;
 }
 
-.header-navbar__link {
+.navbar__item + .navbar__item {
     padding: 5px 22px;
+}
+
+.navbar__item:first-child {
+    padding: 5px 22px 5px 0;
+}
+
+.navbar__link {
     color: #9c9d9d;
     font-weight: 500;
     transition: 0.25s;
 }
 
-.header-navbar__link:hover {
+.navbar__link:hover {
     color: var(--color-deep-dark);
 }
 
-.header-action {
+.navbar-action {
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
-.header-action__link {
+.navbar-action__link {
     color: var(--color-dark);
     font-weight: 500;
 }
 
-.header-action__link:hover {
+.navbar-action__link:hover {
     text-decoration: underline;
 }
 
@@ -160,7 +175,6 @@ button {
 
 .hero-content {
     width: 42%;
-    padding-left: 135px;
 }
 
 .hero-sale {
@@ -191,6 +205,7 @@ button {
     color: var(--color-dark);
     font-size: 7rem;
     font-weight: 700;
+    line-height: 1.15;
 }
 
 .hero-content__title--color {
@@ -392,6 +407,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 74px;
     padding: 70px 159px 80px;
 }
 
@@ -416,10 +432,6 @@ button {
 
 .courses-content {
     text-align: center;
-}
-
-.courses-content__title {
-    margin-top: 24px;
 }
 
 .courses-row {
@@ -460,7 +472,7 @@ button {
 .courses-col__wraps {
     display: flex;
     align-items: center;
-    gap: 53px;
+    justify-content: space-between;
     margin-top: 17px;
 }
 
@@ -504,10 +516,6 @@ button {
 
 .about-content {
     text-align: center;
-}
-
-.about-content__title {
-    margin-top: 24px;
 }
 
 .about-row {
@@ -583,10 +591,6 @@ button {
     text-align: center;
 }
 
-.blog-content__title {
-    margin-top: 20px;
-}
-
 .blog-container {
     margin-top: 50px;
 }
@@ -617,6 +621,10 @@ button {
     cursor: default;
 }
 
+.blog-rows {
+    margin-top: 40px;
+}
+
 .blog-row {
     display: none;
 }
@@ -624,7 +632,6 @@ button {
 .blog-row--active {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 40px;
 }
 
 .blog-col__img {
@@ -634,7 +641,7 @@ button {
     object-fit: cover;
 }
 
-.blog-col__wrap {
+.blog-col__wrap-top {
     display: flex;
     align-items: center;
     gap: 11px;
@@ -673,7 +680,7 @@ button {
     line-height: 1.66;
 }
 
-.blog-col__wrap {
+.blog-col__wrap-bot {
     display: flex;
     align-items: center;
     margin-top: 20px;
@@ -725,10 +732,6 @@ button {
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-.event-content__title {
-    margin-top: 20px;
 }
 
 .event-content__desc {
@@ -824,10 +827,6 @@ button {
     text-align: center;
 }
 
-.category-content__title {
-    margin-top: 20px;
-}
-
 .category-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -875,10 +874,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.feedback-heading__title {
-    margin-top: 20px;
 }
 
 .feedback-wraps {
@@ -1045,10 +1040,6 @@ button {
     align-items: flex-start;
 }
 
-.contact-content__title {
-    margin-top: 20px;
-}
-
 .contact-content__desc {
     margin-top: 24px;
     color: #898b94;
@@ -1179,17 +1170,17 @@ button {
 }
 
 .footer-bot {
-    display: flex;
-    align-items: flex-start;
-    gap: 51px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 114px;
 }
 
 .footer-left {
-    width: 36%;
+    width: 70%;
 }
 
 .footer-left__desc {
+    width: 100%;
     margin-top: 22px;
     color: var(--color-gray);
     font-size: 1.4rem;
@@ -1220,8 +1211,9 @@ button {
 
 .footer-wrap {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
 }
 
 .footer-wrap__list {

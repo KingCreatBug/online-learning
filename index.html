@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <!-- Styles css -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
         <!-- Script -->
         <script src="./assets/js/main.js"></script>
         <!-- Embed font -->
@@ -105,7 +106,7 @@
         <!-- Main -->
         <main>
             <!-- Hero -->
-            <div class="hero">
+            <div id="home" class="hero">
                 <section class="hero-content">
                     <div class="hero-sale">
                         <p class="hero-sale__number">50% OFF</p>
@@ -180,6 +181,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="container">
                 <!-- Trade -->
                 <div class="trade">
@@ -221,12 +223,10 @@
                 </div>
 
                 <!-- Courses -->
-                <div class="courses">
+                <div id="courses" class="courses">
                     <section class="courses-content">
                         <p class="section-sub-title">Our Courses</p>
-                        <h2 class="courses-content__title section-heading">
-                            Browse Our Best Courses
-                        </h2>
+                        <h2 class="section-heading">Browse Our Best Courses</h2>
                     </section>
                     <div class="courses-row">
                         <!-- Courses item 1 -->
@@ -422,12 +422,12 @@
             </div>
 
             <!-- About -->
-            <div class="about">
+            <div id="about" class="about">
                 <div class="container">
                     <div class="about-inner">
                         <section class="about-content">
                             <p class="section-sub-title">Why Choose Us</p>
-                            <h2 class="about-content__title section-heading">
+                            <h2 class="section-heading">
                                 A Choice That Makes The Differece
                             </h2>
                         </section>
@@ -502,10 +502,10 @@
             </div>
             <div class="container">
                 <!-- Blog -->
-                <div class="blog">
+                <div id="blog" class="blog">
                     <section class="blog-content">
                         <p class="section-sub-title">Latest News</p>
-                        <h2 class="blog-content__title section-heading">
+                        <h2 class="section-heading">
                             Education news all over the world.
                         </h2>
                     </section>
@@ -528,7 +528,7 @@
                                         alt=""
                                         class="blog-col__img"
                                     />
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-top">
                                         <p class="blog-wrap__status">
                                             Business
                                         </p>
@@ -540,7 +540,7 @@
                                         Take Your Career to the Next Level
                                         Future
                                     </h3>
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-bot">
                                         <img
                                             src="./assets/img/blog-img/blog-avt1.jpg"
                                             alt=""
@@ -559,7 +559,7 @@
                                         alt=""
                                         class="blog-col__img"
                                     />
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-top">
                                         <p
                                             class="blog-wrap__status blog-wrap__status--green"
                                         >
@@ -573,7 +573,7 @@
                                         Take Your Career to the Next Level
                                         Future
                                     </h3>
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-bot">
                                         <img
                                             src="./assets/img/blog-img/blog-avt2.jpg"
                                             alt=""
@@ -592,7 +592,7 @@
                                         alt=""
                                         class="blog-col__img"
                                     />
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-top">
                                         <p
                                             class="blog-wrap__status blog-wrap__status--orange"
                                         >
@@ -606,7 +606,7 @@
                                         Take Your Career to the Next Level
                                         Future
                                     </h3>
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-bot">
                                         <img
                                             src="./assets/img/blog-img/blog-avt3.jpg"
                                             alt=""
@@ -629,7 +629,7 @@
                                         alt=""
                                         class="blog-col__img"
                                     />
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-top">
                                         <p
                                             class="blog-wrap__status blog-wrap__status--green"
                                         >
@@ -643,7 +643,7 @@
                                         Take Your Career to the Next Level
                                         Future
                                     </h3>
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-bot">
                                         <img
                                             src="./assets/img/blog-img/blog-avt2.jpg"
                                             alt=""
@@ -662,7 +662,7 @@
                                         alt=""
                                         class="blog-col__img"
                                     />
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-top">
                                         <p
                                             class="blog-wrap__status blog-wrap__status--orange"
                                         >
@@ -676,7 +676,7 @@
                                         Take Your Career to the Next Level
                                         Future
                                     </h3>
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-bot">
                                         <img
                                             src="./assets/img/blog-img/blog-avt3.jpg"
                                             alt=""
@@ -699,7 +699,7 @@
                                         alt=""
                                         class="blog-col__img"
                                     />
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-top">
                                         <p class="blog-wrap__status">
                                             Business
                                         </p>
@@ -711,7 +711,7 @@
                                         Take Your Career to the Next Level
                                         Future
                                     </h3>
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-bot">
                                         <img
                                             src="./assets/img/blog-img/blog-avt1.jpg"
                                             alt=""
@@ -731,7 +731,7 @@
                                         alt=""
                                         class="blog-col__img"
                                     />
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-top">
                                         <p
                                             class="blog-wrap__status blog-wrap__status--orange"
                                         >
@@ -745,7 +745,7 @@
                                         Take Your Career to the Next Level
                                         Future
                                     </h3>
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-bot">
                                         <img
                                             src="./assets/img/blog-img/blog-avt3.jpg"
                                             alt=""
@@ -768,7 +768,7 @@
                                         alt=""
                                         class="blog-col__img"
                                     />
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-top">
                                         <p class="blog-wrap__status">
                                             Business
                                         </p>
@@ -780,7 +780,7 @@
                                         Take Your Career to the Next Level
                                         Future
                                     </h3>
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-bot">
                                         <img
                                             src="./assets/img/blog-img/blog-avt1.jpg"
                                             alt=""
@@ -799,7 +799,7 @@
                                         alt=""
                                         class="blog-col__img"
                                     />
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-top">
                                         <p
                                             class="blog-wrap__status blog-wrap__status--green"
                                         >
@@ -813,7 +813,7 @@
                                         Take Your Career to the Next Level
                                         Future
                                     </h3>
-                                    <div class="blog-col__wrap">
+                                    <div class="blog-col__wrap-bot">
                                         <img
                                             src="./assets/img/blog-img/blog-avt2.jpg"
                                             alt=""
@@ -838,9 +838,7 @@
                 <div class="event">
                     <section class="event-content">
                         <p class="section-sub-title">Shedule Of Event</p>
-                        <h2 class="section-heading event-content__title">
-                            Upcoming Events
-                        </h2>
+                        <h2 class="section-heading">Upcoming Events</h2>
                         <p class="event-content__desc">
                             Whether it's a live or recorded course you want to
                             create, Airschool is the short and easy answer. With
@@ -1011,7 +1009,7 @@
                     <div class="category-inner">
                         <section class="category-content">
                             <p class="section-sub-title">Popular Category</p>
-                            <h2 class="section-heading category-content__title">
+                            <h2 class="section-heading">
                                 Featured Topics by Category
                             </h2>
                         </section>
@@ -1098,9 +1096,7 @@
                 <div class="feedback">
                     <section class="feedback-heading">
                         <p class="section-sub-title">Student Feedback</p>
-                        <h2 class="section-heading feedback-heading__title">
-                            What People Say
-                        </h2>
+                        <h2 class="section-heading">What People Say</h2>
                     </section>
                     <div class="feedback-wraps">
                         <!-- Feedback info -->
@@ -1223,12 +1219,10 @@
                 </div>
 
                 <!-- Contact -->
-                <div class="contact">
+                <div id="contact" class="contact">
                     <section class="contact-content">
                         <p class="section-sub-title">Contact US</p>
-                        <h2 class="section-heading contact-content__title">
-                            Ready to get started?
-                        </h2>
+                        <h2 class="section-heading">Ready to get started?</h2>
                         <p class="contact-content__desc">
                             There are many variations of passages of Lorem Ipsum
                             available, but the majority have suffered alteration
