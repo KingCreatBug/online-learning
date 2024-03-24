@@ -175,6 +175,7 @@ button {
 
 .hero-content {
     width: 42%;
+    padding-left: 135px;
 }
 
 .hero-sale {
@@ -463,6 +464,7 @@ button {
 }
 
 .courses-col__title {
+    height: 44px;
     margin-top: 16px;
     color: #292c3f;
     font-weight: 600;
