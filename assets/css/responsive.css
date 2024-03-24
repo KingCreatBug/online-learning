@@ -482,4 +482,12 @@
     .footer-bot {
         grid-template-columns: 1fr;
     }
+
+    .footer-sub__icon {
+        display: none;
+    }
+
+    .footer-sub__desc {
+        align-items: center;
+    }
 }
