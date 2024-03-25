@@ -488,6 +488,6 @@
     }
 
     .footer-sub__desc {
-        align-items: center;
+        text-align: center;
     }
 }
